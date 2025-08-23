@@ -27,10 +27,10 @@ function App() {
           <Header />
           <main className="main-content">
             <Routes>
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
+              <Route path="https://task-management-app-five-ashen.vercel.app/login" element={<Login />} />
+              <Route path="https://task-management-app-five-ashen.vercel.app/register" element={<Register />} />
               <Route
-                path="/tasks"
+                path="https://task-management-app-five-ashen.vercel.app/tasks"
                 element={
                   <ProtectedRoute>
                     <TaskList />

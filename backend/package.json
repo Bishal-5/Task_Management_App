@@ -16,7 +16,7 @@
     "jwt",
     "task-management"
   ],
-  "author": "Ishan Chakraborty",
+  "author": "Bishal Naskar",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
