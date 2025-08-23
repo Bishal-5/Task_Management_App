@@ -47,8 +47,8 @@ app.get('/', (req, res) => {
   res.send('Welcome!')
 });
 
-app.use("/api/auth", authRoutes);
-app.use("/api/tasks", authenticate, taskRoutes);
+app.use("https://task-management-app-client-eight.vercel.app/api/auth", authRoutes);
+app.use("https://task-management-app-client-eight.vercel.app/api/tasks", authenticate, taskRoutes);
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {
