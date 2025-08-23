@@ -12,6 +12,7 @@ import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import TaskList from "./components/Tasks/TaskList";
 import "./App.css";
+
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
 
@@ -27,10 +28,10 @@ function App() {
           <Header />
           <main className="main-content">
             <Routes>
-              <Route path="https://task-management-app-five-ashen.vercel.app/login" element={<Login />} />
-              <Route path="https://task-management-app-five-ashen.vercel.app/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
               <Route
-                path="https://task-management-app-five-ashen.vercel.app/tasks"
+                path="/tasks"
                 element={
                   <ProtectedRoute>
                     <TaskList />
